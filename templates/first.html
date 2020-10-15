@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/c1.css')}}">
+</head>
+<body>
+    <center>
+        <h1>Rendering this first html file by using Flask framework</h1>
+        <h1>{{name}}</h1>
+        <h1>{{age}}</h1>
+        <!--
+        {% for i in name %}
+            <h2>{{i}}</h2>
+            {% endfor %}
+        -->
+        <img src="{{url_for('static',filename='images/dhoni.jpg')}}" alt="Dhoni images" height="300px" width="300px">
+    
+    <a href="{{url_for('Anchor')}}">Click here to navigate to Anchor function</a>
+    </center>
+</body>
+</html>
